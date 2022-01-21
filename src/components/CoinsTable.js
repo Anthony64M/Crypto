@@ -141,7 +141,7 @@ export default function CoinsTable() {
                           }}
                         >
                           <img
-                            src={row?.image}
+                            src={row.image}
                             alt={row.name}
                             height="50"
                             style={{ marginBottom: 10 }}
@@ -169,7 +169,7 @@ export default function CoinsTable() {
                         <TableCell
                           align="right"
                           style={{
-                            color: profit > 0 ? "rgb(14, 203, 129)" : "red",
+                            color: profit ? "rgb(14, 203, 129)" : "red",
                             fontWeight: 500,
                           }}
                         >
