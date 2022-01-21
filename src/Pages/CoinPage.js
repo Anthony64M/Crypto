@@ -84,16 +84,16 @@ const CoinPage = () => {
     <div className={classes.container}>
       <div className={classes.sidebar}>
         <img
-          src={coin?.image.large}
-          alt={coin?.name}
+          src= {coin.image.large}
+          alt= {coin.name}
           height="200"
           style={{ marginBottom: 20 }}
         />
         <Typography variant="h3" className={classes.heading}>
-          {coin?.name}
+          {coin.name}
         </Typography>
         <Typography variant="subtitle1" className={classes.description}>
-          {ReactHtmlParser(coin?.description.en.split(". ")[0])}.
+          {ReactHtmlParser(coin.description.en.split(". ")[0])}.
         </Typography>
         <div className={classes.marketData}>
           <span style={{ display: "flex" }}>
@@ -107,7 +107,7 @@ const CoinPage = () => {
                 fontFamily: "Montserrat",
               }}
             >
-              {numberWithCommas(coin?.market_cap_rank)}
+              {numberWithCommas(coin.market_cap_rank)}
             </Typography>
           </span>
 
@@ -124,7 +124,7 @@ const CoinPage = () => {
             >
               {symbol}{" "}
               {numberWithCommas(
-                coin?.market_data.current_price[currency.toLowerCase()]
+                coin.market_data.current_price[currency.toLowerCase()]
               )}
             </Typography>
           </span>
@@ -141,7 +141,7 @@ const CoinPage = () => {
             >
               {symbol}{" "}
               {numberWithCommas(
-                coin?.market_data.market_cap[currency.toLowerCase()]
+                coin.market_data.market_cap[currency.toLowerCase()]
                   .toString()
                   .slice(0, -6)
               )}
