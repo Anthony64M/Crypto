@@ -1,4 +1,6 @@
 import { makeStyles } from "@material-ui/core";
+// This line should be there as shows
+import React  from 'react';
 import axios from "axios";
 import { useEffect, useState } from "react";
 import AliceCarousel from "react-alice-carousel";
@@ -14,7 +16,7 @@ const Carousel = () => {
   const fetchTrendingCoins = async () => {
     const { data } = await axios.get(TrendingCoins(currency));
 
-    console.log(data);
+    
     setTrending(data);
   };
 

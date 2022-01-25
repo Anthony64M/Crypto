@@ -1,4 +1,6 @@
 import axios from "axios";
+// This line should be there as shows
+import React  from 'react';
 import { useEffect, useState } from "react";
 import { HistoricalChart } from "../config/api";
 import { Line } from "react-chartjs-2";
@@ -44,7 +46,7 @@ const CoinInfo = ({ coin }) => {
     setHistoricData(data.prices);
   };
 
-  console.log(coin);
+  
 
   useEffect(() => {
     fetchHistoricData();

@@ -1,4 +1,6 @@
 import { Container, makeStyles, Typography } from "@material-ui/core";
+// This line should be there as shows
+import React  from 'react';
 import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({

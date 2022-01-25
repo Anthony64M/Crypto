@@ -1,4 +1,6 @@
 import { makeStyles } from "@material-ui/core";
+// This line should be there as shows
+import React  from 'react';
 import Homepage from "./Pages/HomePage";
 import "./App.css";
 import { BrowserRouter, Route } from "react-router-dom";
